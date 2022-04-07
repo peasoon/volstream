@@ -1,0 +1,26 @@
+.tabs {
+	.tabs-headings {
+		.heading {
+			cursor: pointer;
+			&.selected {
+				color: red;
+			}
+		}
+	}
+	.tabs-content {
+		position: relative;
+		.content {
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transition: 0.4s;
+			display: none;
+			&.show {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
+				display: block;
+			}
+		}
+	}
+}

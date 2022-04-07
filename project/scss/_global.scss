@@ -1,0 +1,80 @@
+@import "./_variables.scss";
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.primary-btn {
+  padding: 20px 32px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 100%;
+  color: #fff;
+  background-color: $Pomegranate;
+  border-radius: 6px;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: darken($Pomegranate, 35%);
+  }
+}
+
+.swiper-button-prev {
+  right: unset !important;
+  left: 0 !important;
+  width: 100px !important;
+  margin: 0;
+  transition: 0.4s;
+  transform: rotate(-180deg);
+
+  @media (max-width: 800px) {
+    width: 50px !important;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    left: -50px !important;
+  }
+
+  &:hover {
+    filter: brightness(35%);
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  right: 0 !important;
+  left: unset !important;
+  width: 100px !important;
+  margin: 0;
+  transition: 0.4s;
+
+  @media (max-width: 800px) {
+    width: 50px !important;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    filter: brightness(35%);
+  }
+
+  &::after {
+    display: none;
+  }
+}
